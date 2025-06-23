@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+header {
+  background-color: #2E4057;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #D3A588;
+}
+#home {
+  text-align: center;
+  padding: 50px;
+  background-image: url('hero-image.jpg'); /* Add a high-quality photo */
+  background-size: cover;
+  color: white;
+}
+footer {
+  background-color: #2E4057;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
