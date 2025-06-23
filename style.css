@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F5F5F5;
+  background-color: #022047;
 }
 header {
   background-color: #2E4057;
@@ -15,28 +15,48 @@ header {
 header h1 {
   font-family: 'Playfair Display', serif;
   margin: 0;
+  font-size: 2.5em;
 }
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-size: 1.1em;
 }
 nav a:hover {
   color: #D3A588;
 }
 #home {
-  text-align: center;
-  padding: 50px;
-  background-image: url('hero-image.jpg'); /* Add a high-quality photo */
-  background-size: cover;
-  color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+  padding: 50px 0;
+}
+#home h2, #home p {
+  position: relative;
+  z-index: 1;
+}
+#home .btn-primary {
+  background-color: #D3A588;
+  border: none;
+}
+#home .btn-primary:hover {
+  background-color: #B76E79;
+}
+#gallery .img-fluid {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+#gallery .img-fluid:hover {
+  transform: scale(1.05);
 }
 footer {
   background-color: #2E4057;
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: relative; /* Removed fixed to avoid overlap */
   width: 100%;
   bottom: 0;
 }

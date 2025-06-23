@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-     <html lang="en">
-     <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>OM Studio</title>
-     </head>
-     <body>
-       <header>
-         <h1>OM Studio</h1>
-         <nav>
-           <a href="#home">Home</a>
-           <a href="#gallery">Gallery</a>
-           <a href="#contact">Contact</a>
-         </nav>
-       </header>
-       <section id="home">
-         <h2>Welcome to Our Studio</h2>
-         <p>Explore stunning photography by Ravi Prakash Malhotra.</p>
-       </section>
-       <footer>
-         <p>Contact us at: ravi.malhotra0512@gmail.com</p>
-       </footer>
-     </body>
-     </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OM Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>OM Studio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="home" class="text-center py-5">
+    <img src="images/hero-image.jpg" alt="Hero Image" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
+    <h2 class="mt-3 text-white">Welcome to OM Studio</h2>
+    <p class="text-white">Explore stunning photography by Ravi Prakash Malhotra.</p>
+    <button class="btn btn-primary mt-3" onclick="window.location.href='https://calendly.com/omstudio';">Book Now</button>
+  </section>
+  <section id="gallery" class="container my-5">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><img src="images/1.jpg" class="img-fluid" alt="Photography Sample 1"></div>
+      <div class="col"><img src="images/2.jpg" class="img-fluid" alt="Photography Sample 2"></div>
+      <div class="col"><img src="images/3.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+      <div class="col"><img src="images/4.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+      <div class="col"><img src="images/5.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+      <div class="col"><img src="images/6.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+      <div class="col"><img src="images/7.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+      <div class="col"><img src="images/8.jpg" class="img-fluid" alt="Photography Sample 3"></div>
+
+    </div>
+  </section>
+  <footer>
+    <p>Contact us at: ravi.malhotra0512@gmail.com</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
