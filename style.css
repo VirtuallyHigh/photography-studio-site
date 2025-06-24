@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #022047;
+  background-color: #eff1f3;
 }
 header {
   background-color: #2E4057;
@@ -27,20 +27,10 @@ nav a:hover {
   color: #D3A588;
 }
 #home {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
-  padding: 50px 0;
-}
-#home h2, #home p {
-  position: relative;
-  z-index: 1;
-}
-#home .btn-primary {
-  background-color: #D3A588;
-  border: none;
-}
-#home .btn-primary:hover {
-  background-color: #B76E79;
+  text-align: center;
+  padding: 50px;
+  color: white;
+  /* Hero image will be added later */
 }
 #gallery .img-fluid {
   max-height: 300px;
@@ -56,7 +46,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  position: relative; /* Removed fixed to avoid overlap */
+  position: relative;
   width: 100%;
   bottom: 0;
 }
