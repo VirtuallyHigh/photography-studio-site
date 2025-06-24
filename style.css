@@ -26,19 +26,17 @@ nav a {
 nav a:hover {
   color: #D3A588;
 }
-#home {
+section {
+  padding: 50px 0;
   text-align: center;
-  padding: 50px;
-  color: white;
-  /* Hero image will be added later */
 }
-#gallery .img-fluid {
+.img-fluid {
   max-height: 300px;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
 }
-#gallery .img-fluid:hover {
+.img-fluid:hover {
   transform: scale(1.05);
 }
 footer {
