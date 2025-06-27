@@ -10,36 +10,54 @@
 <body>
   <header>
     <h1>OM Studio</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
   <section id="home" class="text-center py-5">
-    <img src="images/hero-image.jpg" alt="Hero Image" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
-    <h2 class="mt-3 text-black">Welcome to OM Studio</h2>
-    <p class="text-black">Explore stunning photography by Ravi Prakash Malhotra.</p>
+    <h2>Welcome to OM Studio</h2>
+    <p>Explore stunning photography by Ravi Prakash Malhotra.</p>
     <button class="btn btn-primary mt-3" onclick="window.location.href='https://calendly.com/harshitmalhotra1009/new-meeting';">Book Now</button>
+  </section>
+  <section id="about" class="container my-5" style="display: none;">
+    <h2>About Us</h2>
+    <p>OM Studio is run by Ravi Prakash Malhotra, a passionate photographer with years of experience. We love capturing special moments like weddings, portraits, and nature!</p>
+  </section>
+  <section id="contact" class="container my-5" style="display: none;">
+    <h2>Contact Us</h2>
+    <p>Email: ravi.malhotra0512@gmail.com</p>
+    <p>Phone: +91 9044007515</p>
   </section>
   <section id="gallery" class="container my-5">
     <h2 class="text-center mb-4">Gallery</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col"><img src="images/1.jpg" class="img-fluid" alt="Photography Sample 1"></div>
-      <div class="col"><img src="images/2.jpg" class="img-fluid" alt="Photography Sample 2"></div>
-      <div class="col"><img src="images/3.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-      <div class="col"><img src="images/4.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-      <div class="col"><img src="images/5.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-      <div class="col"><img src="images/6.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-      <div class="col"><img src="images/7.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-      <div class="col"><img src="images/8.jpg" class="img-fluid" alt="Photography Sample 3"></div>
-
+      <div class="col"><img src="images/1.jpg" class="img-fluid" alt="Photo 1"></div>
+      <div class="col"><img src="images/2.jpg" class="img-fluid" alt="Photo 2"></div>
+      <div class="col"><img src="images/3.jpg" class="img-fluid" alt="Photo 3"></div>
+      <div class="col"><img src="images/4.jpg" class="img-fluid" alt="Photo 4"></div>
+      <div class="col"><img src="images/5.jpg" class="img-fluid" alt="Photo 5"></div>
+      <div class="col"><img src="images/6.jpg" class="img-fluid" alt="Photo 6"></div>
     </div>
   </section>
   <footer>
     <p>Contact us at: ravi.malhotra0512@gmail.com</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          sections.forEach(section => section.style.display = 'none');
+          document.getElementById(link.getAttribute('href').substring(1)).style.display = 'block';
+        });
+      });
+      document.getElementById('home').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
